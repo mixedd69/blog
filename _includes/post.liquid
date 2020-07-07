@@ -1,7 +1,9 @@
 ---
 layout: base.liquid
 ---
-<h2>{{ title }}</h2>
-<h3>{{ date | readableDate }}</h3>
-<img src="{{ featuredImage }}" alt="{{ featuredImage }}"></img>
-<p>{{ content | safe }}</p>
+<article>
+    <h2>{{ title }}</h2>
+    <h3>{{ date | readableDate }}</h3>
+    <img src="{{ featuredImage }}" alt="{{ featuredImage }}"></img>
+    <p>{{ content }}</p>
+</article>
