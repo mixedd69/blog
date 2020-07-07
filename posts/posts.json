@@ -1,0 +1,6 @@
+{
+    "layout": "base.liquid",
+    "permalink": "{{ page.fileSlug }}/",
+    "tags": ["posts"],
+    "date": "Created"
+  }
