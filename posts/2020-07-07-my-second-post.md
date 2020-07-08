@@ -5,7 +5,7 @@ description: second test post
 date: 2020-07-07T21:00:00.000Z
 featuredImage: /images/uploads/830-600x400.jpg
 ---
-![lorem](/images/uploads/866-500x600.jpg "ipsum")
+![lorem]( "ipsum")
 
 ## What is Lorem Ipsum?
 
@@ -14,8 +14,6 @@ featuredImage: /images/uploads/830-600x400.jpg
 ## Why do we use it?
 
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
 
 ## Where does it come from?
 
