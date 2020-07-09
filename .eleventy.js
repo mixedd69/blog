@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('images')
     eleventyConfig.addPassthroughCopy('admin')
 
+    // added luxon for readable dates
     const {
         DateTime
     } = require("luxon");
@@ -19,4 +20,15 @@ module.exports = function (eleventyConfig) {
         }).toFormat("dd LLL yyyy");
     });
 
+    // added markdown-it & implicit-figures plugin
+    const markdownIt = require('markdown-it');
+    let implicitFigures = require('markdown-it-implicit-figures');
+    let options = {
+        html: true,
+        breaks: true,
+        linkify: true
+      };
+    let markdownLib = markdownIt(options).use(implicitFigures);
+    
+    eleventyConfig.setLibrary("md", markdownLib);
 };
