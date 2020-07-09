@@ -1,19 +1,16 @@
 ---
 layout: base.liquid
 ---
-
-# Welcome to my site!
-
-Not to brag, but it's pretty great.
-
-<img src="https://picsum.photos/id/684/600/400" alt="">
-
-Occaecat quis tempor aliqua irure qui tempor nostrud ullamco excepteur commodo eu. Do enim excepteur duis qui pariatur
-cupidatat ad culpa sunt. Tempor labore commodo est cillum aliquip eiusmod nostrud. Qui ex anim magna est.
-
-{% for post in collections.posts reversed %}
-  <a href="{{ post.url }}">
-    <h2>{{ post.data.title }}</h2>
-    <time>{{ post.date | readableDate }}</time>
-  </a>
-{% endfor %}
+<main class="container">
+  <aside class="sidebar">
+    <h1># Blog</h1>
+  </aside>
+  <article class="content">
+    {% for post in collections.posts reversed %}
+    <a href="{{ post.url }}">
+      <h2>{{ post.data.title }}</h2>
+      <time>{{ post.date | readableDate }}</time>
+    </a>
+    {% endfor %}
+  </article>
+</main>
