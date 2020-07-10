@@ -1,11 +1,27 @@
 ---
 layout: base.liquid
 ---
+
+<!--
 <article>
     <h2>{{ title }}</h2>
     <h3>{{ date | readableDate }}</h3>
-    <img src="{{ featuredImage }}" alt="{{ featuredImage }}"></img>
+    <img src="{{ featuredImage }}" alt={{ featuredImage }}"></img>
     <p>{{ content }}</p>
 </article>
+-->
+
+<main>
+  <figure class="article-hero">
+	<img src="{{ featuredImage }}" alt="{{ featuredImage }}" />
+  </figure>
+  <section class="article-wrapper">
+    <div class="article-content">
+      <h1>{{ title }}</h1>
+      <h3>{{ date | readableDate }}</h3>
+      <p>{{ content }}</p>
+    </div>
+  </section>
+</main>
 
 {% include footer.liquid %}

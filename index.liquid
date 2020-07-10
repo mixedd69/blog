@@ -6,11 +6,14 @@ layout: base.liquid
     <h1># Blog</h1>
   </aside>
   <article class="content">
+  <!--
     {% for post in collections.posts reversed %}
     <a href="{{ post.url }}">
       <h2>{{ post.data.title }}</h2>
       <time>{{ post.date | readableDate }}</time>
     </a>
     {% endfor %}
+    -->
+    {% include postlist.liquid %}
   </article>
 </main>

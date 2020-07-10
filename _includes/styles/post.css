@@ -1,0 +1,58 @@
+/* post.css */
+
+.article-hero > img {
+  width: 100vw;
+  height: 400px;
+  /*background: url("https://picsum.photos/1080/1920") no-repeat center top;*/
+  position: relative;
+  z-index: -1;
+}
+
+.article-wrapper {
+  margin: 0 30px;
+}
+.article-wrapper .article-content {
+  background: #fff;
+  margin: -60px auto 30px;
+  padding: 1px 30px 30px;
+  max-width: 850px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.article-wrapper .article-content h1, .article-wrapper .article-content h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #545454;
+}
+.article-wrapper .article-content h2 {
+  font-size: 30px;
+  text-align: left;
+}
+.article-wrapper .article-content p, .article-wrapper .article-content blockquote {
+  color: #545454;
+  font-size: 18px;
+  line-height: 1.54;
+  font-family: sans-serif;
+}
+.article-wrapper .article-content blockquote {
+  position: relative;
+  margin: 45px 30px;
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 10px;
+}
+.article-wrapper .article-content blockquote:before {
+  content: '\201C';
+  color: #81bedb;
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  text-shadow: none;
+}
+.article-wrapper .article-content blockquote cite {
+  display: block;
+  margin: 5px 0;
+}

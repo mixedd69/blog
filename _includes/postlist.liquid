@@ -1,0 +1,22 @@
+{% for post in collections.posts reversed %}
+<div class="postlist">
+<main class="card-wrapper">
+	<aside class="image-wrapper">
+		<figure>
+			<img src="{{ post.data.featuredImage }}" alt="{{ post.data.featuredImage }}"></img>
+		</figure>
+	</aside>
+	<article class="content-wrapper">
+		<header>
+			<h2>{{ post.data.title }}</h2>
+		</header>
+		<p>Siargao is a tear-drop shaped island in the Philippine Sea situated 800 kilometers southeast of Manila in the province of Surigao del Norte.</p>
+		<footer>
+			<span>{{ post.date | readableDate }}</span>
+		<a href="{{ post.url }}">read more</a>
+		</footer>
+	</article>
+</main>
+</div>
+<br class="break">
+{% endfor %}
